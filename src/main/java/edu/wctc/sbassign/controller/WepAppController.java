@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Date;
 
 @Controller
-public class WepAppControler {
+public class WepAppController {
     private String appMode;
 
     @Autowired
