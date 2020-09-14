@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" th:href="@{/images/favicon.ico}"/>
+
+    <title>Bitcoin Living the High Life</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+</head>
+<body>
+<!-- start of body -->
+<div class="container">
+    <div th:insert="fragments/_header :: header"></div>
+
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-12 px-0">
+            <article class="text-justify">
+                <p>While Bitcoin has some features that make it great for thieves, it also has some features that make it not so great. The fact that the blockchain is public means that anyone can see to which address the coins were transferred next. After the Sheep Marketplace heist, some users tracked the thief as he or she moved the stolen coins from address to address.</p>
+                This tracking technique isn’t very helpful for the time being, since the thief’s identity is still unknown. However, Bitcoin forensics is getting better and better as programmers figure out new ways to extract information from the blockchain. A thief may leave traces that are undetectable now but could be uncovered in the future, inspiring a retroactive investigation.
+                That’s why this step, money laundering, is so important. Laundering Bitcoin is done with “mixers,” also called “tumblers,” which randomly crisscross your bitcoins with other users’ bitcoins so that you get a clean address that the blockchain cannot connect with any of the addresses from which the coins were stolen.
+                Most of the time it works basically like this: you transfer your stolen bitcoins to a new address owned by the Bitcoin tumbler. That address is still “dirty” because there is a clear path from the victim’s address, so the tumbler leaves the coins there. The tumbler makes a note to transfer the same amount of bitcoins from other users to a new “clean” address owned by you. But it doesn’t make the transfer right away. Anyone watching would probably notice if the same exact amount of bitcoins — say, 96.1 — were moved into a new address, so the tumbler has you withdraw your coins over time in smaller amounts. When you request 10 bitcoins, the tumbler will transfer 10 bitcoins to your clean address. Extra-careful tumblers may also split these payouts further, especially if it is a noticeably large number of bitcoins.
+                Over time, the tumbler will sip bitcoins from the “dirty” addresses in order to replenish the pool. By the time your dirty address gets tapped, you’re long gone. The tumbler is only accessible through the anonymizing Tor network, making it difficult for law enforcement to trace traffic to it or discover the people behind it.
+                Of course, that also means you have to trust the tumbler. “Caution: Mixing services may themselves be operating with anonymity. As such, if the mixing output fails to be delivered or access to funds is denied there is no recourse. Use at your own discretion,” reads the Bitcoin wiki.
+                Another option is to launder the money the way the mob might: spend it at Satoshi Dice or another Bitcoin casino.
+
+            </article>
+        </div>
+
+
+        <!--        <div class="col-md-12 px-0">-->
+        <!--            <h1 class="display-6 font-italic">How to steal Bitcoin in three easy steps</h1>-->
+        <!--            <p class="lead my-3">And once you’ve stolen it, how do you unload it?</p>-->
+        <!--            <p class="lead my-3" th:text="'Citation: ' + ${source}"></p>-->
+        <!--            <p class="lead mb-0"><a href="" class="text-white font-weight-bold">Continue reading...</a></p>-->
+        <!--        </div>-->
+    </div>
+
+</div><!-- /.row -->
+
+</main><!-- /.container -->
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+<html>

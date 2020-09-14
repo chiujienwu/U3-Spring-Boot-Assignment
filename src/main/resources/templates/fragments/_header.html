@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+
+<header class="blog-header py-3" th:fragment="header">
+    <!-- start of first row -->
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <!-- start of first column in first row -->
+        <div class="col">
+            <a class="blog-header-logo text-dark" th:href="@{/}">
+                <img th:src="@{/images/logo.png}" width="100px"/>
+                <span class="h1 align-middle" th:text="${blogname}"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 text-muted" th:href="@{/}">Home</a>
+            <a class="p-2 text-muted" th:href="@{/bitcoin1}">History</a>
+            <a class="p-2 text-muted" th:href="@{/bitcoin2}">Lesson 1 of Tutorial</a>
+            <a class="p-2 text-muted" th:href="@{/bitcoin3}">Lesson 2 of Tutorial</a>
+            <a class="p-2 text-muted" th:href="@{/bitcoin4}">Final Tutorial</a>
+        </nav>
+    </div>
+</header>
+
+</body>
+<html>

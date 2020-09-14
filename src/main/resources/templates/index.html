@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" th:href="@{/images/favicon.ico}"/>
+
+    <title>Home Page Grand Theft Bitcoin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+</head>
+
+
+<body>
+<!-- start of body -->
+<div class="container">
+    <div th:insert="fragments/_header :: header"></div>
+
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-12 px-0">
+            <h1 class="display-4 font-italic">How to steal Bitcoin in three easy steps</h1>
+            <p class="lead my-3">And once you’ve stolen it, how do you unload it?</p>
+            <p class="lead my-3" th:text="'Citation: ' + ${source}"></p>
+            <p class="lead mb-0"><a href="" class="text-white font-weight-bold">Continue reading...</a></p>
+        </div>
+    </div>
+
+    </div><!-- /.row -->
+
+</main><!-- /.container -->
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>
