@@ -8,39 +8,43 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" th:href="@{/images/favicon.ico}"/>
-
     <title>Bitcoin Keys</title>
-
     <!-- Bootstrap core CSS -->
     <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
 </head>
 <body>
 <!-- start of body -->
-<div class="container">
-    <div th:insert="fragments/_header :: header"></div>
-
-    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-12 px-0">
-            <article class="text-justify">
-                There is no such thing as a Bitcoin. The virtual currency is nothing more than a public ledger system, called the blockchain, that keeps track of an ever-expanding list of addresses, and how many units of bitcoin are at those addresses.
-                If you own Bitcoin, what you actually own is the private cryptographic key to unlock a specific address. The private key looks like a long string of numbers and letters. You may choose to store your key, or keys if you have multiple addresses, in a number of places including a paper printout, a metal coin, a hard drive, an online service, or a tattoo on your body.
-                All methods can be protected with various levels of security, but all methods are vulnerable to theft since the robbery simply depends on gaining access to the string. “I recommend creating physical paper wallets using an Arch Linux boot which has never been online,” says Marak Squires, an early Bitcoin adopter who is developing a secure Bitcoin bank. “Unfortunately, this is not an option for most people. For the average user there are no good options right now to securely store cryptocurrencies.”
-                The most lucrative attacks are carried out on online services that store the private keys for a large number of users, as Sheep Marketplace did. It seems these attacks are often carried out by insiders who don’t have to do much hacking at all. Just copy the database of private keys and you can gain control of the bitcoins at all those addresses. You, the thief, can now spend those bitcoins whenever you want, as long as the owner doesn’t move them first.
-            </article>
-        </div>
-
-
-        <!--        <div class="col-md-12 px-0">-->
-        <!--            <h1 class="display-6 font-italic">How to steal Bitcoin in three easy steps</h1>-->
-        <!--            <p class="lead my-3">And once you’ve stolen it, how do you unload it?</p>-->
-        <!--            <p class="lead my-3" th:text="'Citation: ' + ${source}"></p>-->
-        <!--            <p class="lead mb-0"><a href="" class="text-white font-weight-bold">Continue reading...</a></p>-->
-        <!--        </div>-->
-    </div>
-
-</div><!-- /.row -->
-
-</main><!-- /.container -->
+<main>
+    <div class="container">
+        <div th:insert="fragments/_header :: header"></div>
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            <div class="col-md-12 px-0">
+                <article class="text-justify">
+                    <p>There is no such thing as a Bitcoin. The virtual currency is nothing more than a public ledger
+                        system, called the blockchain, that keeps track of an ever-expanding list of addresses, and how
+                        many units of bitcoin are at those addresses.</p>
+                    <p>If you own Bitcoin, what you actually own is the private cryptographic key to unlock a specific
+                        address. The private key looks like a long string of numbers and letters. You may choose to
+                        store your key, or keys if you have multiple addresses, in a number of places including a paper
+                        printout, a metal coin, a hard drive, an online service, or a tattoo on your body.</p>
+                    <p>All methods can be protected with various levels of security, but all methods are vulnerable to
+                        theft since the robbery simply depends on gaining access to the string. “I recommend creating physical
+                        paper wallets using an Arch Linux boot which has never been online,” says Marak Squires, an
+                        early Bitcoin adopter who is developing a secure Bitcoin bank. “Unfortunately, this is not an option
+                        for most people. For the average user there are no good options right now to securely store
+                        cryptocurrencies.”</p>
+                    <p>The most lucrative attacks are carried out on online services that store the private keys for a
+                        large number of users, as Sheep Marketplace did. It seems these attacks are often carried out by
+                        insiders who don’t have to do much hacking at all. Just copy the database of private keys and you can
+                        gain control of the bitcoins at all those addresses. You, the thief, can now spend those bitcoins
+                        whenever you want, as long as the owner doesn’t move them first.</p>
+                </article>
+            </div><!-- /.row -->
+            <p class="lead mb-0"><a class="text-white font-weight-bold" th:href="@{/bitcoin3}">Continue
+                reading...</a>
+        </div><!-- /.jumbotron -->
+    </div><!-- /.container -->
+</main>
 <div th:insert="fragments/_footer :: footer"></div>
 </body>
 <html>

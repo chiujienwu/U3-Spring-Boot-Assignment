@@ -8,40 +8,46 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" th:href="@{/images/favicon.ico}"/>
-
     <title>History of Bitcoin Theft</title>
-
     <!-- Bootstrap core CSS -->
     <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
 </head>
 <body>
 <!-- start of body -->
-<div class="container">
-    <div th:insert="fragments/_header :: header"></div>
-
-    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-12 px-0">
-            <article class="text-justify">
-                Earlier this month, someone pulled off the largest heist in the history of Bitcoin, the virtual currency that approximates cash on the internet. The illegal drug bazaar Sheep Marketplace was plundered, either by hackers or insiders, and about $100 million worth of the currency was stolen from customers.
-                Bitcoin heists are actually not uncommon. In June of 2011, a user named Allinvain was the victim of what is arguably the first recorded major Bitcoin theft. Allinvain awoke to find that a hacker had stolen about half a million dollars’ worth of bitcoins. “I feel like killing myself now,” he wrote at the time.
-                There have been dozens of Bitcoin thefts since then. The supposedly high-return investment fund Bitcoin Savings & Trust turned out to be a pyramid scheme, its owner charged with ripping off investors for $4.5 million in bitcoins. MyBitcoin, a “wallet” service that stored bitcoins like a bank account, disappeared with about $1 million worth of users’ bitcoins. Several of the most trusted and well-known Bitcoin companies, including the Mt. Gox and the now-defunct Bitcoinica exchanges, have also suffered high-profile thefts.
-                Victims of credit card theft can cancel a card or reverse fraudulent transactions, but Bitcoin is attractive to thieves because its transactions are irreversible. “Bitcoin is like cash,” says Nicolas Christin, an assistant research professor at Carnegie Mellon University who has done extensive analysis of Bitcoin. “The only way to get it back is by tracking you down and basically beating you up with a lead pipe.”
-                But like all things Bitcoin, it’s difficult to understand exactly how digital theft works. What are you stealing, exactly? And once you’ve got it, what do you do with it?
-            </article>
-        </div>
-
-
-<!--        <div class="col-md-12 px-0">-->
-<!--            <h1 class="display-6 font-italic">How to steal Bitcoin in three easy steps</h1>-->
-<!--            <p class="lead my-3">And once you’ve stolen it, how do you unload it?</p>-->
-<!--            <p class="lead my-3" th:text="'Citation: ' + ${source}"></p>-->
-<!--            <p class="lead mb-0"><a href="" class="text-white font-weight-bold">Continue reading...</a></p>-->
-<!--        </div>-->
-    </div>
-
-</div><!-- /.row -->
-
-</main><!-- /.container -->
+<main>
+    <div class="container">
+        <div th:insert="fragments/_header :: header"></div>
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            <div class="col-md-12 px-0">
+                <article class="text-justify">
+                    <p>Earlier this month, someone pulled off the largest heist in the history of Bitcoin, the virtual
+                        currency that approximates cash on the internet. The illegal drug bazaar Sheep Marketplace was
+                        plundered, either by hackers or insiders, and about $100 million worth of the currency was
+                        stolen from customers.</p>
+                    <p>Bitcoin heists are actually not uncommon. In June of 2011, a user named Allinvain was the victim
+                        of what is arguably the first recorded major Bitcoin theft. Allinvain awoke to find that a
+                        hacker had stolen about half a million dollars’ worth of bitcoins. “I feel like killing myself
+                        now,” he wrote at the time.</p>
+                    <p>There have been dozens of Bitcoin thefts since then. The supposedly high-return investment fund
+                        Bitcoin Savings & Trust turned out to be a pyramid scheme, its owner charged with ripping off
+                        investors for $4.5 million in bitcoins. MyBitcoin, a “wallet” service that stored bitcoins like
+                        a bank account, disappeared with about $1 million worth of users’ bitcoins. Several of the most
+                        trusted and well-known Bitcoin companies, including the Mt. Gox and the now-defunct Bitcoinica
+                        exchanges, have also suffered high-profile thefts.</p>
+                    <p>Victims of credit card theft can cancel a card or reverse fraudulent transactions, but Bitcoin is
+                        attractive to thieves because its transactions are irreversible. “Bitcoin is like cash,” says
+                        Nicolas Christin, an assistant research professor at Carnegie Mellon University who has done
+                        extensive analysis of Bitcoin. “The only way to get it back is by tracking you down and
+                        basically beating you up with a lead pipe.”</p>
+                    <p>But like all things Bitcoin, it’s difficult to understand exactly how digital theft works. What
+                        are you stealing, exactly? And once you’ve got it, what do you do with it?</p>
+                </article>
+            </div><!-- /.row -->
+            <p class="lead mb-0"><a class="text-white font-weight-bold" th:href="@{/bitcoin2}">Continue
+                reading...</a>
+        </div><!-- /.jumbotron -->
+    </div><!-- /.container -->
+</main>
 <div th:insert="fragments/_footer :: footer"></div>
 </body>
 <html>

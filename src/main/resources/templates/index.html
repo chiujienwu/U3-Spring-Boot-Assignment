@@ -15,24 +15,25 @@
     <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
 </head>
 
-
 <body>
 <!-- start of body -->
-<div class="container">
-    <div th:insert="fragments/_header :: header"></div>
+<main>
+    <div class="container">
+        <div th:insert="fragments/_header :: header"></div>
 
-    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-12 px-0">
-            <h1 class="display-4 font-italic">How to steal Bitcoin in three easy steps</h1>
-            <p class="lead my-3">And once you’ve stolen it, how do you unload it?</p>
-            <p class="lead my-3" th:text="'Citation: ' + ${source}"></p>
-            <p class="lead mb-0"><a href="" class="text-white font-weight-bold">Continue reading...</a></p>
-        </div>
-    </div>
-
-    </div><!-- /.row -->
-
-</main><!-- /.container -->
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            <div class="col-md-12 px-0">
+                <h1 class="display-4 font-italic">How to steal Bitcoin in three easy steps</h1>
+                <p class="lead my-3">And once you’ve stolen it, how do you unload it? WARNING: Don't do the crime if you
+                    can't do the time.</p>
+                <p class="lead my-3" th:text="'Citation: ' + ${source}"></p>
+                <p class="lead mb-0"><a class="text-white font-weight-bold" th:href="@{/bitcoin1}">Continue
+                    reading...</a>
+                </p>
+            </div><!-- /.row -->
+        </div><!-- /.jumbotron -->
+    </div><!-- /.container -->
+</main>
 <div th:insert="fragments/_footer :: footer"></div>
 </body>
 </html>

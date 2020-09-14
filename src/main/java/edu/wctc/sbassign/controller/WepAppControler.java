@@ -36,17 +36,19 @@ public class WepAppControler {
 
     @RequestMapping("/bitcoin2")
     public String lesson2tutorial(Model model){
-        model.addAttribute("blogname","Lesson 1. Copying the Keys");
+        model.addAttribute("blogname","Lesson 1 - Copying the Keys");
         return "pages/lesson1tutorial";
     }
 
     @RequestMapping("/bitcoin3")
-    public String lesson3tutorial(){
+    public String lesson3tutorial(Model model){
+        model.addAttribute("blogname", "Lesson 2 - Getting Away with It");
         return "pages/lesson2tutorial";
     }
 
     @RequestMapping("/bitcoin4")
-    public String lesson4tutorial(){
+    public String lesson4tutorial(Model model){
+        model.addAttribute("blogname","Conclusion - Living Large!");
         return "pages/finaltutorial";
     }
 }
