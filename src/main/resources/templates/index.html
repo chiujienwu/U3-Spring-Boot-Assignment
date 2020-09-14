@@ -20,16 +20,22 @@
 <main>
     <div class="container">
         <div th:insert="fragments/_header :: header"></div>
-
         <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-            <div class="col-md-12 px-0">
-                <h1 class="display-4 font-italic">How to steal Bitcoin in three easy steps</h1>
-                <p class="lead my-3">And once you’ve stolen it, how do you unload it? WARNING: Don't do the crime if you
-                    can't do the time.</p>
-                <p class="lead my-3" th:text="'Citation: ' + ${source}"></p>
-                <p class="lead mb-0"><a class="text-white font-weight-bold" th:href="@{/bitcoin1}">Continue
-                    reading...</a>
-                </p>
+            <div class="row">
+                <div class="col-md-11 px-0">
+                    <h1 class="display-4 font-italic">How to steal Bitcoin in three easy steps</h1>
+                    <p class="lead my-3">And once you’ve stolen it, how do you unload it? WARNING: Don't do the crime if
+                        you
+                        can't do the time.</p>
+                    <p class="lead my-3" th:text="'Citation: ' + ${source}"></p>
+                    <p class="lead mb-0"><a class="text-white font-weight-bold" th:href="@{/bitcoin1}">Continue
+                        reading...</a>
+                    </p>
+                </div><!-- /.column -->
+                <div class="col-md-1 px-0">
+                    <img th:src="@{/images/bitcoin.png}" width="100px" height="100px"
+                         alt="Bitcoin Logo"/>
+                </div>
             </div><!-- /.row -->
         </div><!-- /.jumbotron -->
     </div><!-- /.container -->
